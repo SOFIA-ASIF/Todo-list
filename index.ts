@@ -21,4 +21,8 @@ let todolist = await inquirer.prompt(
 todos.push(todolist.list)
 condition = todolist.addmore
 }
-console.log(todos);
+console.log("Your today's tasks are following:");
+
+for (let i = 0; i < todos.length; i++) {
+    console.log(`${i}. ${todos[i]}`);
+}
